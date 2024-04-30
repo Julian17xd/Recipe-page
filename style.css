@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 20px auto; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+body{
+    background-color: var(--Eggshell);
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main{
+    background-color: var(--White);
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+    width: 46%;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.section-img img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.section-main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.div-preparation{
+    background-color: var(--RoseWhite);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.div-preparation ul li::marker{
+    color: var(--DarkRaspberry);
+}
+
+.span-one{
+    margin-bottom: 10px;
+    color: var(--DarkRaspberry);
+}
+
+.span-bold{
+    font-weight: bold;
+}
+
+ul, ol{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+h2, 
+li::marker,
+.color-Nutmeg{
+    color: var(--Nutmeg);
+    font-weight: bold;
+}
+
+
+.section-border{
+    border-bottom: 1px solid;
+    padding-bottom: 30px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    padding: 15px 30px;
+}
+
+tr:nth-child(-n+3) {
+    border-bottom: 1px solid black;
+}
+
+@media(max-width:768px){
+    main{
+        padding: 20px;
+    }
+
+    body{
+        font-size: 14px;
+    }
+}    
+
+@media(max-width: 600px){
+    main{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .section-img img{
+        border-radius: 0%;
+    }
+    .section-main, .section-border, .section-mobile{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
